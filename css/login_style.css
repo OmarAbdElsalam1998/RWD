@@ -1,0 +1,92 @@
+.my-button {
+  background-color: #feee00;
+  padding: 10px 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.my-button:hover {
+  background-color: #d1c51b;
+}
+
+a {
+  text-decoration: none;
+  color: #0923ff;
+}
+
+.login {
+  height: 100vh;
+  background-image: url("../images/login.jpg");
+  background-size: cover;
+}
+.login .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(125, 123, 164, 0.84);
+}
+.login .overlay .login-box {
+  background-color: #FFF;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.login .overlay .login-box .login-header {
+  position: relative;
+  height: 220px;
+  background-image: url("../images/login-header.jpg");
+  background-size: cover;
+  font-size: 25px;
+  overflow: hidden;
+}
+.login .overlay .login-box .login-header .login-header-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.53);
+  color: #FFF;
+}
+.login .overlay .login-box .login-form .form-group {
+  position: relative;
+}
+.login .overlay .login-box .login-form .form-group .input-field {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e2e2e2;
+  background-color: none;
+  border-radius: 4px;
+  z-index: 1;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+.login .overlay .login-box .login-form .form-group .input-field:focus {
+  border-color: dodgerblue;
+  box-shadow: 0px 0px 6px -2px dodgerblue;
+}
+.login .overlay .login-box .login-form .form-group .input-field:focus + .placeholder-lable {
+  transform: scale(0.9, 0.9);
+  top: -4px;
+  color: dodgerblue;
+  font-weight: bold;
+}
+.login .overlay .login-box .login-form .form-group .input-field:not(:placeholder-shown) + .placeholder-lable {
+  transform: scale(0.9, 0.9);
+  top: -4px;
+  font-weight: bold;
+}
+.login .overlay .login-box .login-form .placeholder-lable {
+  position: absolute;
+  left: 12px;
+  top: 25px;
+  background-color: #FFF;
+  padding: 0 5px;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+.login .overlay .login-box .login-form .show-password {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+/*# sourceMappingURL=login_style.css.map */
